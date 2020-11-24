@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:200|Cairo|Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+
+      <!-- SIDEBAR -->
+      <div class="sidebar">
+        <div class="logo"></div>
+        <div class="nav">
+          <span class="active">MENU</span>
+          <span>TENTANG</span>
+          <span>KONTAK</span>
+          <span>LOKASI</span>
+          <span>MEDIA</span>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="content" id="content">
+        <div class="header" id="header">
+          <span class="lined">DAFTAR MENU</span>
+        </div>
+        <div class="images">
+          <div class="img hidangan" onclick="showDetailMenu(0)" style="cursor: pointer;">
+            <img src="img/sate2.png" alt="" width="150px" height="150px">
+          </div>
+          <div class="img hidangan" onclick="showDetailMenu(1)" style="cursor: pointer;">
+            <img src="img/sop-iga.png" alt="" width="150px" height="150px">
+          </div>
+          <div class="img tambahan" onclick="showDetailMenu(2)" style="cursor: pointer;">
+            <img src="img/ketan.png" alt="" width="150px" height="150px">
+          </div>
+          <div class="img tambahan" onclick="showDetailMenu(3)" style="cursor: pointer;">
+            <img src="img/pete.png" alt="" width="150px" height="150px">
+          </div>
+          <div class="img minuman" onclick="showDetailMenu(4)" style="cursor: pointer;">
+            <img src="img/es-kelapa.png" alt="" width="150px" height="150px">
+          </div>
+        </div>
+        <div class="pages">
+          <i class="fas fa-angle-left" style="font-size: 18px;"></i>
+          <div class="circle">
+            <div class="circles"></div>
+            <div class="circles"></div>
+            <div class="circles"></div>
+            <div class="circles pageIn"></div>
+            <div class="circles"></div>
+          </div>
+          <i class="fas fa-angle-right" style="font-size: 18px;"></i>
+        </div>
+      </div>
+
+      <!-- INFO -->
+      <div class="content-info">
+        <div class="close">
+          <i class="material-icons" onclick="closeDetailMenu(0)" style="cursor: pointer;">close</i>
+        </div>
+        <div class="cover">
+          <img src="img/sate2.png" alt="" width="180px" height="180px">
+        </div>
+        <div class="desc">
+          <h2>Sate</h2>
+          <p>Dengan daging sapi asli, ditabur bumbu kacang, kecap pedas gurih dan taburan acar.</p>
+          <p>Sate ayam terbuat dari daging ayam potong pilihan, serta rempah pilihan sehingga menghatilkan cita rasa
+            yang khas dan ditaburi bumbu kacang dan kecap pedas</p>
+          <h3>Harga</h3>
+          <p>Sate Ayam : Rp. 2500/tusuk</p>
+          <p>Sate Sapi : Rp. 2500/tusuk</p>
+        </div>
+      </div>
+
+      <div class="content-info">
+        <div class="close">
+          <i class="material-icons" onclick="closeDetailMenu(1)" style="cursor: pointer;">close</i>
+        </div>
+        <div class="cover">
+          <img src="img/sop-iga.png" alt="" width="180px" height="180px">
+        </div>
+        <div class="desc">
+          <h2>Sop Iga</h2>
+          <p>Iga sapi dengan rempah pilihan yang mementingkan cita rasa yang khas, ditaburi sayuran dan sambal ijo</p>
+          <h3>Harga</h3>
+          <p>Rp. 15.000</p>
+        </div>
+      </div>
+
+      <div class="content-info">
+        <div class="close">
+          <i class="material-icons" onclick="closeDetailMenu(2)" style="cursor: pointer;">close</i>
+        </div>
+        <div class="cover">
+          <img src="img/ketan.png" alt="" width="180px" height="180px">
+        </div>
+        <div class="desc">
+          <h2>Ketan Bakar</h2>
+          <p>Dibuat dari beras ketan pilihan dan campuran kelapa. Dibakar secara merata agar pembakaran ketan maksimal
+            dengan taburan bumbu oncom di atasnya</p>
+          <h3>Harga</h3>
+          <p>Rp. 2000</p>
+        </div>
+      </div>
+
+      <div class="content-info">
+        <div class="close">
+          <i class="material-icons" onclick="closeDetailMenu(3)" style="cursor: pointer;">close</i>
+        </div>
+        <div class="cover">
+          <img src="img/pete.png" alt="" width="180px" height="180px">
+        </div>
+        <div class="desc">
+          <h2>Bakar Pete</h2>
+          <p>Menggunakan pete tua, pembakaran yang merata membuat pete matang secara sempurna</p>
+          <h3>Harga</h3>
+          <p>Rp. 5000/papan</p>
+        </div>
+      </div>
+
+      <div class="content-info">
+        <div class="close">
+          <i class="material-icons" onclick="closeDetailMenu(4)" style="cursor: pointer;">close</i>
+        </div>
+        <div class="cover">
+          <img src="img/es-kelapa.png" alt="" width="180px" height="180px">
+        </div>
+        <div class="desc">
+          <h2>Es Kelapa</h2>
+          <p>Paduan kelapa muda, gula murni dan susu kental manis mementingkan rasa dan kesegaran es kelapa</p>
+          <h3>Harga</h3>
+          <p>Rp. 5000/papan</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
