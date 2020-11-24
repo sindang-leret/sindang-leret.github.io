@@ -54,7 +54,7 @@ main {
 }
 
 .active {
-  color: black;
+  color: white;
 }
 
 .content {
@@ -99,27 +99,21 @@ main {
   align-items: center;
 }
 
-.pages {
+.footer {
   width: 90%;
-  height: 200px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 30px;
+  margin-top: auto;
+  background-color: white;
 }
 
-.circle {
+.footer-box {
   width: 70%;
   display: flex;
   justify-content: center;
-}
-
-.circles {
-  width: 7px;
-  height: 7px;
-  border-radius: 100%;
-  border: 1px solid black;
-  margin-left: 6px;
+  font-size: 13px;
 }
 
 .pageIn {
