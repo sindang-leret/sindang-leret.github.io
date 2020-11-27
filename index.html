@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Assistant:200|Cairo|Open+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
@@ -47,7 +50,8 @@
       <!-- CONTENT -->
       <div class="content" id="content">
         <div class="header" id="header">
-          <span class="lined">DAFTAR MENU</span>
+          <span>Daftar Menu</span>
+          <img src="img/logo-sindang-leret-black.png" alt="logo-sindang-leret-black" class="logo-black">
         </div>
         <div class="images">
           <div class="img hidangan" onclick="showDetailMenu(0)" style="cursor: pointer;">
@@ -57,7 +61,7 @@
             <img src="img/sop-iga.png" alt="" width="150px" height="150px">
           </div>
           <div class="img tambahan" onclick="showDetailMenu(2)" style="cursor: pointer;">
-            <img src="img/ketan.png" alt="" width="150px" height="150px">
+            <img src="img/ketan.jpg" alt="" width="150px" height="150px">
           </div>
           <div class="img tambahan" onclick="showDetailMenu(3)" style="cursor: pointer;">
             <img src="img/pete.png" alt="" width="150px" height="150px">
@@ -87,10 +91,12 @@
           <p>Sate ayam terbuat dari daging ayam potong pilihan, serta rempah pilihan sehingga menghatilkan cita rasa
             yang khas dan ditaburi bumbu kacang dan kecap pedas</p>
           <h3>Harga</h3>
-          <p>Sate Sapi : Rp. 2500/tusuk</p>
-          <p>Sate Ayam : Rp. 2000/tusuk</p>
+          <p>Sate Sapi : Rp. 2500/tusuk <br>Sate Ayam : Rp. 2000/tusuk</p>
           <h3>Pesan Sekarang!</h3>
-          <p> <a href="https://wa.me/6289604685861">0896-0468-5861</a> (Telp/Whatsapp)</p>
+          <div class="kontak" style="display: flex; align-items: center;">
+            <img src="img/logo-wa.png" alt="logo-whatsapp" style="width: 30px;">
+            <a href="https://wa.me/6289604685861" style="text-decoration: none;">0896-0468-5861</a>
+          </div>
         </div>
       </div>
 
@@ -107,7 +113,10 @@
           <h3>Harga</h3>
           <p>Rp. 15.000</p>
           <h3>Pesan Sekarang!</h3>
-          <p>0896-0468-5861 (Telp/Whatsapp)</p>
+          <div class="kontak" style="display: flex; align-items: center;">
+            <img src="img/logo-wa.png" alt="logo-whatsapp" style="width: 30px;">
+            <a href="https://wa.me/6289604685861" style="text-decoration: none;">0896-0468-5861</a>
+          </div>
         </div>
       </div>
 
@@ -116,7 +125,7 @@
           <i class="material-icons" onclick="closeDetailMenu(2)" style="cursor: pointer;">close</i>
         </div>
         <div class="cover">
-          <img src="img/ketan.png" alt="" width="180px" height="180px">
+          <img src="img/ketan.jpg" alt="" width="180px" height="180px">
         </div>
         <div class="desc">
           <h2>Ketan Bakar</h2>
@@ -125,7 +134,10 @@
           <h3>Harga</h3>
           <p>Rp. 2000</p>
           <h3>Pesan Sekarang!</h3>
-          <p>0896-0468-5861 (Telp/Whatsapp)</p>
+          <div class="kontak" style="display: flex; align-items: center;">
+            <img src="img/logo-wa.png" alt="logo-whatsapp" style="width: 30px;">
+            <a href="https://wa.me/6289604685861" style="text-decoration: none;">0896-0468-5861</a>
+          </div>
         </div>
       </div>
 
@@ -142,7 +154,10 @@
           <h3>Harga</h3>
           <p>Rp. 5000/papan</p>
           <h3>Pesan Sekarang!</h3>
-          <p>0896-0468-5861 (Telp/Whatsapp)</p>
+          <div class="kontak" style="display: flex; align-items: center;">
+            <img src="img/logo-wa.png" alt="logo-whatsapp" style="width: 30px;">
+            <a href="https://wa.me/6289604685861" style="text-decoration: none;">0896-0468-5861</a>
+          </div>
         </div>
       </div>
 
@@ -159,7 +174,10 @@
           <h3>Harga</h3>
           <p>Rp. 5000</p>
           <h3>Pesan Sekarang!</h3>
-          <p>0896-0468-5861 (Telp/Whatsapp)</p>
+          <div class="kontak" style="display: flex; align-items: center;">
+            <img src="img/logo-wa.png" alt="logo-whatsapp" style="width: 30px;">
+            <a href="https://wa.me/6289604685861" style="text-decoration: none;">0896-0468-5861</a>
+          </div>
         </div>
       </div>
     </div>

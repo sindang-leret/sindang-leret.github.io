@@ -66,7 +66,10 @@ body {
     width: 40%;
     display: flex;
     flex-direction: column;
-    background: #efefeffc;
+    background-image: url(img/content-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
   
   .header {
@@ -74,16 +77,22 @@ body {
     width: 90%;
     display: flex;
     justify-content: center;
+    font-family: 'Lobster', cursive;
+    color: #e7e7da;
+  }
+
+  .logo-black {
+    width: 170px;
   }
   
   .header span {
-    font-size: 14px;
+    font-size: 26px;
     margin-top: 5px;
     margin-left: 40px;
   }
   
   .lined {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #bd6c33;
   }
   
   .images {
@@ -111,7 +120,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: auto;
-    background-color: white;
+    background-color: transparent;
   }
   
   .footer-box {
@@ -120,11 +129,9 @@ body {
     justify-content: center;
     font-size: 13px;
     text-align: center;
+    color: white;
   }
   
-  .pageIn {
-    background-color: black;
-  }
   
   .content-info {
     width: 40%;
@@ -152,9 +159,17 @@ body {
     width: 90%;
     margin: 10px;
   }
+
+  .desc h2, .desc h3 {
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+  }
   
   .desc p {
+    font-family: 'Courgette', cursive;
     font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 10px;
   }
   
   .btn {
@@ -206,6 +221,10 @@ body {
   
   /* Top Navigtaion */
   .sidebar {
+    display: none;
+  }
+
+  .logo-black {
     display: none;
   }
 
@@ -337,6 +356,11 @@ body {
   
   .content-info {
     display: none;
+  }
+
+  .kontak a{
+    text-decoration: none;
+    margin-bottom: 5px;
   }
   
   /* .close {

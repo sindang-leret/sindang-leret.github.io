@@ -23,6 +23,8 @@ function line_header(n) {
     line_menu[i].style.cursor = 'pointer'
     if (line_menu[i].classList[0] == menu[n].classList[1]) {
       line_menu[i].classList.add('lined')
+    } else if (line_menu[i].classList[0] == 'Daftar Menu') {
+      line_menu[i].classList.remove('lined')
     } else {
       line_menu[i].classList.remove('lined')
     }
@@ -46,12 +48,12 @@ function showDetailMenu(n) {
   if (detailMenu[n].style.display === 'none') {
     detailMenu[n].style.display = 'flex'
     content.style.width = '40%'
-    header.innerHTML = '<span class="hidangan" onclick="showMenu(0)">HIDANGAN</span>' +
-      '<span class="minuman" onclick="showMenu(1)">MINUMAN</span>' + '<span class="tambahan" onclick="showMenu(2)">TAMBAHAN</span>'
+    header.innerHTML = '<span class="hidangan" onclick="showMenu(0)">Hidangan</span>' +
+      '<span class="minuman" onclick="showMenu(1)">Minuman</span>' + '<span class="tambahan" onclick="showMenu(2)">Tambahan</span>'
   } else {
     detailMenu[n].style.display = 'none'
     content.style.width = '80%'
-    header.innerHTML = '<span class="lined">DAFTAR MENU</span>'
+    header.innerHTML = '<span>Daftar Menu</span><img src="img/logo-sindang-leret-black.png" alt="logo-sindang-leret-black" class="logo-black">'
   }
 
   line_header(n)
@@ -61,7 +63,7 @@ function showDetailMenu(n) {
 function closeDetailMenu(n) {
   detailMenu[n].style.display = 'none'
   content.style.width = '80%'
-  header.innerHTML = '<span class="lined">DAFTAR MENU</span>'
+  header.innerHTML = '<span>Daftar Menu</span><img src="img/logo-sindang-leret-black.png" alt="logo-sindang-leret-black" class="logo-black">'
   for (i = 0; i < menu.length; i++) {
     menu[i].style.display = 'flex'
   }
