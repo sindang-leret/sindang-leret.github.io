@@ -24,6 +24,10 @@ body {
     box-shadow: 1px 2px 30px 3px rgba(0, 0, 0, 0.75);
   }
   
+  .topnav {
+    display: none;
+  }
+
   .sidebar {
     width: 20%;
     display: flex;
@@ -181,6 +185,7 @@ body {
 
 @media screen and (max-width: 800px) {
 
+  /* Root Wrapper */
   main {
     width: 100%;
     display: flex;
@@ -199,14 +204,77 @@ body {
     margin-bottom: 20px;
   }
   
+  /* Top Navigtaion */
   .sidebar {
     display: none;
   }
 
-  .active {
+  .topnav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .topnav-wrap {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .topnav-wrap a {
+    display: flex;
+    width: 85%;
+    padding: 7px;
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .topnav-logo {
+    width: 70%;
+    margin-left: 40px;
+  }
+
+  .topnav-wrap span {
+    width: 15%;
+    padding: 7px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .topnav-wrap span:before {
+    content: '\2630';
+  }
+
+  .topnav-wrap span:hover {
+    background: #443737;
+    color: white;
+  }
+
+  .topnav-menu {
+    display: none;
+    flex-direction: column;
+  }
+
+  .topnav-menu a {
+    text-decoration: none;
+    color: #656262;
+    padding: 5px;
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+
+  .topnav-menu a:hover {
+    background-color: white;
+    color: black;
+  }
+
+  a.active {
     color: white;
   }
   
+  /* Content */
   .content {
     display: flex;
     width: 100% !important;
