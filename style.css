@@ -198,7 +198,7 @@ body {
 
 /* Mobile Responsive */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
 
   /* Root Wrapper */
   main {
@@ -298,10 +298,14 @@ body {
     display: flex;
     width: 100% !important;
     flex-direction: column;
-    background: #efefeffc;
+    background-image: url(img/content-bg-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
   .header {
+    font-family: 'Lobster', cursive;
     margin: 10px 0px 20px 0px;
     width: 90%;
     display: flex;
@@ -309,7 +313,7 @@ body {
   }
   
   .header span {
-    font-size: 14px;
+    font-size: 26px;
     margin-top: 5px;
     margin-left: 40px;
   }
@@ -384,4 +388,44 @@ body {
   .desc p {
     font-size: 14px;
   } */
+  
+  .content-info {
+    width: 100%;
+    height: 94vh;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: -10px -1px 28px -14px rgba(0, 0, 0, 0.75);
+  }
+  
+  .close {
+    width: 90%;
+    margin: 15px;
+    text-align: right;
+  }
+  
+  .cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+  }
+  
+  .desc {
+    width: 90%;
+    margin: 10px;
+  }
+
+  .desc h2, .desc h3 {
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+  }
+  
+  .desc p {
+    font-family: 'Courgette', cursive;
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+  }
+  
 }
